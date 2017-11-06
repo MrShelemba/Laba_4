@@ -53,7 +53,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 mu4 = 0.00001;
 [y4, e4, b_4] = lms(x1, s1, mu4, L1);
 % Графіки результату фільтрації
-figure(13);
+figure(12);
 subplot(2, 1, 1); plot(t1, x1); grid on;
 title('Вузькосмуговий сигнал з шумом'); ylabel('Амплітуда');
 subplot(2, 1, 2); plot(t1, y4); grid on;
@@ -63,7 +63,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 mu5 = 0.000001;
 [y5, e5, b_5] = lms(x1, s1, mu5, L1);
 % Графіки результату фільтрації
-figure(14);
+figure(13);
 subplot(2, 1, 1); plot(t1, x1); grid on;
 title('Вузькосмуговий сигнал з шумом'); ylabel('Амплітуда');
 subplot(2, 1, 2); plot(t1, y5); grid on;
@@ -76,7 +76,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 L2 = 256;
 [y6, e6, b2] = lms(x1, s1, mu1, L2);
 % Графіки результату фільтрації
-figure(15);
+figure(14);
 subplot(3, 1, 1); plot(t1, x1); grid on;
 title('Вузькосмуговий сигнал з шумом'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t1, y6); grid on;
@@ -99,7 +99,7 @@ N3 = 800;
 L3 = 512;
 [y7, e7, b3] = lms(x3, s3, mu1, L3);
 % Графіки результату фільтрації
-figure(16);
+figure(15);
 subplot(3, 1, 1); plot(t3, x3); grid on;
 title('Вузькосмуговий сигнал з шумом'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t3, y7); grid on;
@@ -122,7 +122,7 @@ N4 = 1400;
 L4 = 1024;
 [y8, e8, b4] = lms(x4, s4, mu1, L4);
 % Графіки результату фільтрації
-figure(17);
+figure(16);
 subplot(3, 1, 1); plot(t4, x4); grid on;
 title('Вузькосмуговий сигнал з шумом'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t4, y8); grid on;

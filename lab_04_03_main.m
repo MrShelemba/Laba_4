@@ -17,7 +17,7 @@ x1 = s1+v1;
 L1 = 128; mu1 = 0.0001;
 [y1, e1, b1] = lms(x1, s1, mu1, L1);
 % Графіки результату фільтрації
-figure(18);
+figure(17);
 subplot(3, 1, 1); plot(t2_1, x1); grid on;
 title('Сигнал зі змінною частотою з шумом'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t2_1, y1); grid on;
@@ -37,7 +37,7 @@ xlabel('Відліки'); ylabel('Підсилення');
 mu2 = 0.01;
 [y2, e2, b_2] = lms(x1, s1, mu2, L1);
 % Графіки результату фільтрації
-figure(19);
+figure(18);
 subplot(2, 1, 1); plot(t2_1, x1); grid on;
 title('Сигнал зі змінною частотою з шумом'); ylabel('Амплітуда');
 subplot(2, 1, 2); plot(t2_1, y2); grid on;
@@ -47,7 +47,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 mu3 = 0.001;
 [y3, e3, b_3] = lms(x1, s1, mu3, L1);
 % Графіки результату фільтрації
-figure(20);
+figure(19);
 subplot(2, 1, 1); plot(t2_1, x1); grid on;
 title('Сигнал зі змінною частотою з шумом'); ylabel('Амплітуда');
 subplot(2, 1, 2); plot(t2_1, y3); grid on;
@@ -57,7 +57,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 mu4 = 0.00001;
 [y4, e4, b_4] = lms(x1, s1, mu4, L1);
 % Графіки результату фільтрації
-figure(22);
+figure(20);
 subplot(2, 1, 1); plot(t2_1, x1); grid on;
 title('Сигнал зі змінною частотою з шумом'); ylabel('Амплітуда');
 subplot(2, 1, 2); plot(t2_1, y4); grid on;
@@ -67,7 +67,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 mu5 = 0.000001;
 [y5, e5, b_5] = lms(x1, s1, mu5, L1);
 % Графіки результату фільтрації
-figure(22);
+figure(21);
 subplot(2, 1, 1); plot(t2_1, x1); grid on;
 title('Сигнал зі змінною частотою з шумом'); ylabel('Амплітуда');
 subplot(2, 1, 2); plot(t2_1, y5); grid on;
@@ -80,7 +80,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 L2 = 256;
 [y6, e6, b2] = lms(x1, s1, mu1, L2);
 % Графіки результату фільтрації
-figure(23);
+figure(22);
 subplot(3, 1, 1); plot(t2_1, x1); grid on;
 title('Сигнал зі змінною частотою з шумом'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t2_1, y6); grid on;
@@ -106,7 +106,7 @@ x3 = s3+v3;
 L3 = 512;
 [y7, e7, b3] = lms(x3, s3, mu1, L3);
 %Графіки результату фільтрації
-figure(24);
+figure(23);
 subplot(3, 1, 1); plot(t2_3, x3); grid on;
 title('Сигнал зі змінною частотою з шумом'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t2_3, y7); grid on;
@@ -132,7 +132,7 @@ x4 = s4+v4;
 L4 = 1024;
 [y8, e8, b4] = lms(x4, s4, mu1, L4);
 % Графіки результату фільтрації
-figure(25);
+figure(24);
 subplot(3, 1, 1); plot(t2_4, x4); grid on;
 title('Сигнал зі змінною частотою з шумом'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t2_4, y8); grid on;

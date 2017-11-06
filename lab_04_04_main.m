@@ -11,7 +11,7 @@ mu1 = 0.1;
 [y1, e1, b1] = lms60(ecg, d, mu1);
 
 % Графіки результату фільтрації
-figure(26);
+figure(25);
 subplot(3, 1, 1); plot(t, ecg), grid on;
 title('Сигнал ЕКГ з перешкодою'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t, e1); grid on;
@@ -23,7 +23,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 % АЧХ адаптивного фільтру
 a = 1;
 n = 512; % кількість точок, що розраховуються
-figure(27);
+figure(26);
 [h, f] = freqz(b1, a, n);
 mag = abs(h);
 plot(f/(2*pi)*fs, mag), grid on;
@@ -40,7 +40,7 @@ disp(b1);
 % Дослідження залежності часу адаптації від коефіцієнта адаптації
 mu2 = 0.01;
 [y2, e2, b2] = lms60(ecg, d, mu2);
-figure(28);
+figure(27);
 subplot(3, 1, 1); plot(t, ecg), grid on;
 title('Сигнал ЕКГ з перешкодою'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t, e2); grid on;
@@ -52,7 +52,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 
 mu3 = 0.001;
 [y3, e3, b3] = lms60(ecg, d, mu3);
-figure(29);
+figure(28);
 subplot(3, 1, 1); plot(t, ecg), grid on;
 title('Сигнал ЕКГ з перешкодою'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t, e3); grid on;
@@ -64,7 +64,7 @@ xlabel('Відліки'); ylabel('Амплітуда');
 
 mu4 = 0.0001;
 [y4, e4, b4] = lms60(ecg, d, mu4);
-figure(30);
+figure(29);
 subplot(3, 1, 1); plot(t, ecg), grid on;
 title('Сигнал ЕКГ з перешкодою'); ylabel('Амплітуда');
 subplot(3, 1, 2); plot(t, e4); grid on;
